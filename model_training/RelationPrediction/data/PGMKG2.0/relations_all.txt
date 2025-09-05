@@ -1,0 +1,7 @@
+belong_to
+hasID
+may_regulate
+negative_relate
+positive_relate
+produce
+related_to
