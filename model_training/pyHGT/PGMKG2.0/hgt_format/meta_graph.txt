@@ -1,0 +1,42 @@
+# PGMKG Meta Graph Structure
+
+## Node Types:
+- Bacteria: 1098 nodes
+- Gene: 10474 nodes
+- Metabolite: 2268 nodes
+- Pathway: 33 nodes
+- Trait: 9 nodes
+- PMID: 751 nodes
+- ID: 149 nodes
+- Taxonomy: 6 nodes
+- Segment: 4 nodes
+
+## Edge Types:
+- Bacteria --[belong_to]--> Taxonomy: 851 edges
+- Bacteria --[belong_to]--> Segment: 1069 edges
+- Bacteria --[belong_to]--> PMID: 3412 edges
+- Bacteria --[related_to]--> Trait: 1586 edges
+- Bacteria --[related_to]--> Gene: 6 edges
+- Bacteria --[positive_relate]--> Trait: 67 edges
+- Bacteria --[negative_relate]--> Trait: 26 edges
+- Bacteria --[produce]--> Metabolite: 81 edges
+- Bacteria --[hasID]--> ID: 149 edges
+- Gene --[may_regulate]--> Bacteria: 29 edges
+- Gene --[related_to]--> Trait: 3 edges
+- Gene --[belong_to]--> PMID: 48 edges
+- Pathway --[positive_relate]--> Trait: 20 edges
+- Pathway --[negative_relate]--> Trait: 8 edges
+- Pathway --[related_to]--> Trait: 5 edges
+- Pathway --[belong_to]--> PMID: 33 edges
+- Metabolite --[related_to]--> Trait: 4 edges
+- Metabolite --[related_to]--> Metabolite: 13489 edges
+- Metabolite --[related_to]--> Gene: 45749 edges
+- Metabolite --[positive_relate]--> Bacteria: 138 edges
+- Metabolite --[positive_relate]--> Metabolite: 8549 edges
+- Metabolite --[positive_relate]--> Gene: 25238 edges
+- Metabolite --[positive_relate]--> Trait: 1 edges
+- Metabolite --[negative_relate]--> Bacteria: 134 edges
+- Metabolite --[negative_relate]--> Metabolite: 10988 edges
+- Metabolite --[negative_relate]--> Gene: 24013 edges
+- Metabolite --[belong_to]--> PMID: 141 edges
+- Trait --[belong_to]--> PMID: 36 edges
